@@ -1,9 +1,9 @@
 #!/bin/bash
 
-<<<<<<< HEAD
 if [ "$1" = "--date" ]; then
   date +%Y-%m-%d
-=======
+fi
+
 if [ "$1" = "--logs" ]; then
 
 for i in {1..100}
@@ -14,5 +14,4 @@ do
     echo "Data: $(date)" >> log$i.txt
 done
 
->>>>>>> logs
 fi
