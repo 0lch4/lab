@@ -1,6 +1,5 @@
 #!/bin/bash
 
-<<<<<<< HEAD
 if [ "$1" = "--date" ]; then
   date +%Y-%m-%d
 fi
@@ -15,7 +14,8 @@ do
     echo "Data: $(date)" >> log$i.txt
 done
 
-=======
+fi
+
 if [ "$1" = "--logs" ] && [ "$2" -gt 0 ] 2>/dev/null; then
     for ((i=1; i<=$2; i++))
     do
@@ -24,5 +24,5 @@ if [ "$1" = "--logs" ] && [ "$2" -gt 0 ] 2>/dev/null; then
         echo "Nazwa skryptu: $0" >> log$i.txt
         echo "Data utworzenia: $(date)" >> log$i.txt
     done
->>>>>>> logs30
+
 fi
