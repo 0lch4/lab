@@ -33,6 +33,7 @@ do
     echo "Nazwa Skryptu: $0" >> error$i/error$i.txt
     echo "Data: $(date)" >> error$i/error$i.txt
 done
+fi
 
 if [ "$1" = "--error" ] && [ "$2" = "-e" ] && [ "$3" -gt 0 ] 2>/dev/null;then
 
