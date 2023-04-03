@@ -1,8 +1,9 @@
 #!/bin/bash
 
-if [ "$1" = "--logs" ]; then
+if [ "$1" = "--logs" ] && [ "$2" -gt 0 ] 2>/dev/null;then
 
-for i in {1..100}
+for ((i=1; i<=$2; i++))
+
 do
     mkdir log$i
     touch log$i/log$i.txt
