@@ -66,10 +66,11 @@ fi
 if [ "$1" = "--logs" ] && [ "$2" -gt 0 ] 2>/dev/null; then
     for ((i=1; i<=$2; i++))
     do
-        touch log$i.txt
-        echo "Nazwa pliku: log$i.txt" >> log$i.txt
-        echo "Nazwa skryptu: $0" >> log$i.txt
-        echo "Data utworzenia: $(date)" >> log$i.txt
+    mkdir logs$i
+    touch logs$i/logs$i.txt
+    echo "Nazwa Pliku: logs$i.txt" >> logs$i/logs$i.txt
+    echo "Nazwa Skryptu: $0" >> logs$i/logs$i.txt
+    echo "Data: $(date)" >> logs$i/logs$i.txt
     done
 fi
 
