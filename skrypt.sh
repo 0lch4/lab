@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$1" = "--logs" ]; then
+if [ "$1" = "--logs" ] && [ "$2" = "-l" ]; then
 
 for i in {1..100}
 do
