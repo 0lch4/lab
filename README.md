@@ -1,1 +1,1 @@
-# lab
+# zadanie z przedmiotu narzedzia pracy w branzy it
