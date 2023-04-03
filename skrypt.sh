@@ -96,6 +96,5 @@ echo "skrypt.sh --logs utworzy automatycznie 100 plików logx/logx.txt, x  to nu
 echo "skrypt.sh --logs30 - tak jak wyzej ale tworzy liczbe podana w argumencie"
 echo "skrypt.sh --error - tworzy 100 plikow error/error.txt"
 echo "skrypt.sh --error -e - tworzy liczbe plikow error/error.txt podana w argumencie"
->>>>>>> help
 
 fi
