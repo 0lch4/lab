@@ -9,7 +9,7 @@ if [ "$1" = "--date" ] && [ "$2" = "-d" ]; then
     date +%Y-%m-%d
 fi
 
-if [ "$1" = "--logs -l" ]; then
+if [ "$1" = "--logs -l" ] && [ "$2" = "-l" ];; then
 
 for ((i=1; i<=100; i++))
 
