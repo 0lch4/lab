@@ -1,8 +1,9 @@
 #!/bin/bash
 
-if [ "$1" = "--error" ];then
+if [ "$1" = "--error" ] && [ "$2" = "-e" ] && [ "$3" -gt 0 ] 2>/dev/null;then
 
-for ((i=1; i<=100; i++))
+for ((i=1; i<=$3; i++))
+
 
 do
     mkdir error$i
