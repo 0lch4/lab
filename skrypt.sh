@@ -5,11 +5,11 @@ if [[ "$1" == "--init" ]]; then
     echo 'export PATH=$PATH:'$(pwd) >> ~/.bashrc
 fi
 
-if [ "$1" = "--date" ]; then
+if [ "$1" = "--date -d" ]; then
     date +%Y-%m-%d
 fi
 
-if [ "$1" = "--logs" ]; then
+if [ "$1" = "--logs -l" ]; then
 
 for ((i=1; i<=100; i++))
 
@@ -32,6 +32,18 @@ do
     echo "Nazwa Pliku: error$i.txt" >> error$i/error$i.txt
     echo "Nazwa Skryptu: $0" >> error$i/error$i.txt
     echo "Data: $(date)" >> error$i/error$i.txt
+done
+
+if [ "$1" = "--logs" ]; then
+
+for ((i=1; i<=100; i++))
+
+do
+    mkdir logs$i
+    touch logs$i/logs$i.txt
+    echo "Nazwa Pliku: logs$i.txt" >> logs$i/logs$i.txt
+    echo "Nazwa Skryptu: $0" >> logs$i/logs$i.txt
+    echo "Data: $(date)" >> logs$i/logs$i.txt
 done
 
 fi
