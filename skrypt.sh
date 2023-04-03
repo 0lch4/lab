@@ -1,15 +1,15 @@
 #!/bin/bash
 
-if [ "$1" = "--logs" ] && [ "$2" -gt 0 ] 2>/dev/null;then
+if [ "$1" = "--error" ];then
 
-for ((i=1; i<=$2; i++))
+for ((i=1; i<=100; i++))
 
 do
-    mkdir log$i
-    touch log$i/log$i.txt
-    echo "Nazwa Pliku: log$i.txt" >> log$i/log$i.txt
-    echo "Nazwa Skryptu: $0" >> log$i/log$i.txt
-    echo "Data: $(date)" >> log$i/log$i.txt
+    mkdir error$i
+    touch error$i/error$i.txt
+    echo "Nazwa Pliku: error$i.txt" >> error$i/error$i.txt
+    echo "Nazwa Skryptu: $0" >> error$i/error$i.txt
+    echo "Data: $(date)" >> error$i/error$i.txt
 done
 
 fi
