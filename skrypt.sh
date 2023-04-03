@@ -1,6 +1,5 @@
 #!/bin/bash
 
-<<<<<<< HEAD
 if [[ "$1" == "--init" ]]; then
     git clone <https://github.com/0lch4/lab.git>
     echo 'export PATH=$PATH:'$(pwd) >> ~/.bashrc
@@ -32,8 +31,6 @@ if [ "$1" = "--logs" ] && [ "$2" -gt 0 ] 2>/dev/null; then
     done
 fi
 
-if [ "$1" = "--help" ]; then
-=======
 if [ "$1" = "--help" ] && [ "$2" = "-h" ]; then
 
 echo "skrypt.sh --date -d - wyswietli dzisiejsza date"
