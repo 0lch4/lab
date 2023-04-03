@@ -15,10 +15,10 @@ for ((i=1; i<=100; i++))
 
 do
     mkdir logs$i
-    touch logs$i/logs$i.txt
-    echo "Nazwa Pliku: logs$i.txt" >> logs$i/logs$i.txt
-    echo "Nazwa Skryptu: $0" >> logs$i/logs$i.txt
-    echo "Data: $(date)" >> logs$i/logs$i.txt
+    touch logs$i.txt
+    echo "Nazwa Pliku: logs$i.txt" >> logs$i.txt
+    echo "Nazwa Skryptu: $0" >> logs$i.txt
+    echo "Data: $(date)" >> logs$i.txt
 done
 fi
 
