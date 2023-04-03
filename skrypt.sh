@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$1" = "--error" ];then
+if [ "$1" = "--error" ]; then
 
 for ((i=1; i<=100; i++))
 
