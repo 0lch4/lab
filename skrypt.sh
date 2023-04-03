@@ -1,5 +1,6 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 if [ "$1" = "--date" ]; then
   date +%Y-%m-%d
 fi
@@ -25,4 +26,6 @@ if [ "$1" = "--logs" ] && [ "$2" -gt 0 ] 2>/dev/null; then
         echo "Data utworzenia: $(date)" >> log$i.txt
     done
 
+=======
+>>>>>>> help
 fi
