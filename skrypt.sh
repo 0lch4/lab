@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ "$1" = "--help" ]; then
+if [ "$1" = "--help -h" ]; then
 
 echo "skrypt.sh --date -d - wyswietli dzisiejsza date"
 echo "skrypt.sh --logs -l - utworzy 100 plikow logx.txt gdzie x to numer pliku"
