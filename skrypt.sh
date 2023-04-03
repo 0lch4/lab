@@ -5,7 +5,7 @@ if [[ "$1" == "--init" ]]; then
     echo 'export PATH=$PATH:'$(pwd) >> ~/.bashrc
 fi
 
-if [ "$1" = "--date" ] && ["$2" = "-d" ]; then
+if [ "$1" = "--date" ] && [ "$2" = "-d" ]; then
     date +%Y-%m-%d
 fi
 
