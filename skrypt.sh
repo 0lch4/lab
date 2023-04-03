@@ -22,7 +22,7 @@ do
 done
 fi
 
-if [ "$1" = "--error" ]; then
+if [ "$1" = "--error" ] && [ "$2" = "" ]; then
 
 for ((i=1; i<=100; i++))
 
