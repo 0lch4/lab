@@ -1,12 +1,12 @@
 #!/bin/bash
 
-<<<<<<< HEAD
 if [[ "$1" == "--init" ]]; then
-    git clone <D:\lab>
+    git clone <https://github.com/0lch4/lab.git>
     echo 'export PATH=$PATH:'$(pwd) >> ~/.bashrc
-=======
+fi
+
 if [ "$1" = "--date" ]; then
-  date +%Y-%m-%d
+    date +%Y-%m-%d
 fi
 
 if [ "$1" = "--logs" ]; then
@@ -36,5 +36,4 @@ if [ "$1" = "--help" ]; then
 echo "skrypt.sh --date - wyswietli dzisiejsza date"
 echo "skrypt.sh --logs - utworzy 100 plikow logx.txt gdzie x to numer pliku"
 echo "skrypt.sh --logs30 - utworzy 30 plikow jak wyzej(mozna podac zamiast 30 dowolna liczbe"
->>>>>>> parent of 0c9a46e (Update skrypt.sh)
 fi
