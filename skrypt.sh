@@ -50,8 +50,7 @@ done
 
 fi
 
-if [ "$1" = "--logs" ]; then
-
+if [ "$1" = "--logs" ] && [ "$2" = "" ]; then
 for ((i=1; i<=100; i++))
 
 do
