@@ -1,13 +1,14 @@
 #!/bin/bash
 
-if [ "$1" = "--logs" ] && [ "$2" = "-l" ]; then
+if [ "$1" = "--logs" ]; then
 
 for i in {1..100}
 do
-    touch log$i.txt
-    echo "Nazwa Pliku: log$i.txt" >> log$i.txt
-    echo "Nazwa Skryptu: $0" >> log$i.txt
-    echo "Data: $(date)" >> log$i.txt
+    mkdir log$i
+    touch log$i/log$i.txt
+    echo "Nazwa Pliku: log$i.txt" >> log$i/log$i.txt
+    echo "Nazwa Skryptu: $0" >> log$i/log$i.txt
+    echo "Data: $(date)" >> log$i/log$i.txt
 done
 
 fi
