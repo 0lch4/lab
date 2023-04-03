@@ -11,12 +11,27 @@ fi
 
 if [ "$1" = "--logs" ]; then
 
-for i in {1..100}
+for ((i=1; i<=100; i++))
+
 do
-    touch log$i.txt
-    echo "Nazwa Pliku: log$i.txt" >> log$i.txt
-    echo "Nazwa Skryptu: $0" >> log$i.txt
-    echo "Data: $(date)" >> log$i.txt
+    mkdir logs$i
+    touch logs$i/logs$i.txt
+    echo "Nazwa Pliku: logs$i.txt" >> logs$i/logs$i.txt
+    echo "Nazwa Skryptu: $0" >> logs$i/logs$i.txt
+    echo "Data: $(date)" >> logs$i/logs$i.txt
+done
+fi
+
+if [ "$1" = "--error" ]; then
+
+for ((i=1; i<=100; i++))
+
+do
+    mkdir error$i
+    touch error$i/error$i.txt
+    echo "Nazwa Pliku: error$i.txt" >> error$i/error$i.txt
+    echo "Nazwa Skryptu: $0" >> error$i/error$i.txt
+    echo "Data: $(date)" >> error$i/error$i.txt
 done
 
 fi
